@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no" />
+        <title>i Deliver 4 you</title>
+        <!--        <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+                <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">-->
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+        <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css"/>-->
+
+
+        <!-- =======================================================
+            Theme Name: Mentor
+            Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+            Author: BootstrapMade.com
+            Author URL: https://bootstrapmade.com
+        ======================================================= -->
+
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <header id="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="HomePage.html">i <span>deliver 4</span> you</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#header">Home</a></li>
+                            <!--<li><a href="#feature">Features</a></li>-->
+                            <!--<li><a href="#pricing">Pricing</a></li>-->
+
+
+                            <li><a href="#" data-target="#loginbox" data-toggle="modal">Login</a></li>
+                            <li class="btn-trial"><a href="#footer">Contact US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--/ Navigation bar-->
+        <!--Modal box-->
+        <div class="modal fade" id="loginbox" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content no 1-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center form-title">Login</h4>
+                    </div>
+                    <div class="modal-body padtrbl">
+
+                        <div class="login-box-body">
+                            <p class="login-box-msg">Sign in to start your session</p>
+                            <div class="form-group">
+                                <form name="loginForm" id="loginForm" wicket:id="loginForm">
+                                    <span wicket:id="loginFeedbackError" ></span>
+                                    <div class="form-group has-feedback"> <!----- username -------------->
+                                        <input class="form-control" wicket:id="username" placeholder="Username" name="loginid"  id="loginid" type="text" autocomplete="off" /> 
+                                        <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
+                                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback"><!----- password -------------->
+                                        <input class="form-control" wicket:id="password" placeholder="Password" name="loginpsw" id="loginpsw" type="password" autocomplete="off" />
+                                        <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="checkbox icheck">
+                                                <label>
+                                                    <input type="checkbox" wicket:id="rememberMe"> Remember Me
+                                                </label>
+                                            </div>
+                                            <!--<wicket:container wicket:id="kaptcha"></wicket:container>-->
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <!--<button type="button" name="clickLogin" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>-->
+                                            <button type="submit" name="clickLogin" class="btn btn-green btn-block btn-flat" >Sign In</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                                Don't have an account! 
+                                                <a href="#" onClick="$('#loginbox').hide()" data-target="#signupbox" data-toggle="modal"> 
+                                                    Sign Up Here
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--SING UP-->
+        <div class="modal fade" id="signupbox" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content no 1-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"  onClick="$('#loginbox').show()">&times;</button>
+                        <h4 class="modal-title text-center form-title">Sign Up</h4>
+                    </div>
+                    <div class="modal-body padtrbl">
+
+                        <div class="login-box-body">
+                            <p class="login-box-msg">Please complete the following</p>
+                            <div class="form-group">
+                                <form name="signupForm" id="signupForm" wicket:id="signUpForm">                                  
+
+                                    <div class="form-group has-feedback">
+                                        <input type="text" name="userName" class="form-control form" wicket:id="signupUserName" id="userName" placeholder="User Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="password" name="password" class="form-control form" wicket:id="signupPassword" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter enter your password" />
+                                        <div class="validation"></div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <input type="password" name="confirmpassword" class="form-control form" wicket:id="confirmpassword" id="confirmpassword" placeholder="Confirm Password" data-rule="minlen:4" data-msg="Please confirm your password" />
+                                        <div class="validation"></div>
+                                    </div>                      
+                                    <div class="row">
+                                        <div id="formMsgs"></div>
+                                        <div class="col-xs-12">
+                                            <button type="submit" name="singupbtn" class="btn btn-green btn-block btn-flat" >Sign Up</button>
+                                            <!--<button type="button" class="btn btn-green btn-block btn-flat" name="singupbtn" id="singupbtn" onclick="singup()">Sign Up</button>-->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--CLOSE SING UP-->
+        <!--/ Modal box-->
+        <!--Banner-->
+        <div class="banner">
+            <div class="bg-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-text text-center">
+                            <div class="text-border">
+                                <h2 class="text-dec">Trust & Quality</h2>
+                            </div>
+                            <div class="intro-para text-center quote">
+                                <p class="big-text">Your Safe & Quick Parcel Delivery</p>
+                                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
+                                <a href="#." class="btn">GET A QUOTE</a>
+                            </div>
+                            <a href="#cta-2" class="mouse-hover"><div class="mouse"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ Banner-->
+        <!--Feature-->
+        <!--Cta-->
+        <section id="cta-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Search Country</h2>
+                        <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
+                        <div class="cta-2-form text-center">
+                            <form action="#" method="post" id="workshop-newsletter-form">
+                                <input name="" placeholder="Enter Your Email Address" type="email">
+                                <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
+                            </form>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Cta-->
+        <!--Pricing-->
+        <section id ="pricing" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+                        <h2>Our Pricing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+                        <hr class="bottom-line">
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="price-table">
+                            <!-- Plan  -->
+                            <div class="pricing-head">
+                                <h4>Monthly Plan</h4>
+                                <span class="fa fa-usd curency"></span> <span class="amount">200</span> 
+                            </div>
+
+                            <!-- Plean Detail -->
+                            <div class="price-in mart-15">
+                                <a href="#" class="btn btn-bg green btn-block">PURCHACE</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="price-table">
+                            <!-- Plan  -->
+                            <div class="pricing-head">
+                                <h4>Quarterly Plan</h4>
+                                <span class="fa fa-usd curency"></span> <span class="amount">800</span> 
+                            </div>
+
+                            <!-- Plean Detail -->
+                            <div class="price-in mart-15">
+                                <a href="#" class="btn btn-bg yellow btn-block">PURCHACE</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="price-table">
+                            <!-- Plan  -->
+                            <div class="pricing-head">
+                                <h4>Year Plan</h4>
+                                <span class="fa fa-usd curency"></span> <span class="amount">1200</span> 
+                            </div>
+
+                            <!-- Plean Detail -->
+                            <div class="price-in mart-15">
+                                <a href="#" class="btn btn-bg red btn-block">PURCHACE</a> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Pricing-->
+        <!--Contact-->
+        <section id ="contact" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+                        <h2>Contact Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+                        <hr class="bottom-line">
+                    </div>
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="col-md-6 col-sm-6 col-xs-12 left">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 right">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <!-- Button -->
+                            <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!--/ Contact-->
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container text-center">
+
+                <!--                <h3>Start Your Free Trial Now!</h3>
+                
+                                <form class="mc-trial row">
+                                    <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+                                        <div class=" controls">
+                                            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+                                        </div>
+                                    </div> End email input 
+                                    <div class="form-group col-md-3 col-sm-4">
+                                        <div class=" controls">
+                                            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+                                        </div>
+                                    </div> End email input 
+                                    <div class="col-md-2 col-sm-4">
+                                        <p>
+                                            <button name="submit" type="submit" class="btn btn-block btn-submit">
+                                                Submit <i class="fa fa-arrow-right"></i></button>
+                                        </p>
+                                    </div>
+                                </form> End newsletter-form -->
+                <ul class="social-links">
+                    <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+                    <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+                    <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                    <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                </ul>
+                ©2016 Mentor Theme. All rights reserved
+                <div class="credits">
+                    <!-- 
+                        All the links in the footer should remain intact. 
+                        You can delete the links only if you purchased the pro version.
+                        Licensing information: https://bootstrapmade.com/license/
+                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a>
+                </div>
+            </div>
+        </footer>
+        <!--/ Footer-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+
+        <!--        <script type="text/javascript" src="js/libs/jquery-2.0.3.js"></script>
+                <script type="text/javascript" src="js/libs/jquery.mobile-1.4.2.js"></script>
+                <script type="text/javascript" src="js/libs/lodash-2.4.1.js"></script>-->
+        <!--<script src="contactform/contactform.js"></script>-->
+        <script type="text/javascript" src="js/app/app.js"></script>
+
+    </body>
+</html>

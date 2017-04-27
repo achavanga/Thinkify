@@ -1,0 +1,13 @@
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\BaseDto.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\mapper\ServiceMapper.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\UserDto.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\AddressDto.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\Bootstrapper.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\UserRoleDto.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\security\service\impl\UserService.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\PersonDto.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\security\service\util\GenericTransformer.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\security\service\util\EntityMapper.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\security\service\util\UserNotFoundException.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\security\service\IUserService.java
+D:\Personal Dev\thinkify\ThinkifyMalayitsha\ThinkifyMalayitsha-ejb\src\main\java\za\co\thinking\dto\AuthenticateUser.java

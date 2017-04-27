@@ -1,0 +1,13 @@
+za\co\thinking\security\service\util\EntityMapper.class
+za\co\thinking\dto\UserDto.class
+za\co\thinking\security\service\util\UserNotFoundException.class
+za\co\thinking\dto\BaseDto.class
+za\co\thinking\dto\AuthenticateUser.class
+za\co\thinking\security\service\util\GenericTransformer.class
+za\co\thinking\mapper\ServiceMapper.class
+za\co\thinking\security\service\impl\UserService.class
+za\co\thinking\security\service\IUserService.class
+za\co\thinking\dto\UserRoleDto.class
+za\co\thinking\dto\PersonDto.class
+za\co\thinking\Bootstrapper.class
+za\co\thinking\dto\AddressDto.class
