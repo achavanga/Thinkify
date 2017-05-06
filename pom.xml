@@ -39,6 +39,14 @@
         <commons-logging.version>1.1.1</commons-logging.version>
         <wicket.version>7.6.0</wicket.version>
     </properties>
+    <developers>
+        <developer>
+            <id>dev1</id>
+            <name>Chavanga Abel</name>
+            <email>achavanga@gmail.com</email>
+            <url>https://github.com/achavanga</url>            
+        </developer>       
+    </developers>
     <dependencyManagement>
         <dependencies>
             <!-- JBoss distributes a complete set of Java EE 7 APIs including

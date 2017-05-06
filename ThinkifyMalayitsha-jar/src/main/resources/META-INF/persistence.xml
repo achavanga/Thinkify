@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-    <persistence-unit name="malayitsha-pu"  transaction-type="JTA">
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <jta-data-source>java:jboss/datasources/MALAYITSHA</jta-data-source>
-        <!--<mapping-file>META-INF/orm.xml</mapping-file>-->
-        <!--    <properties>
+  <persistence-unit name="malayitsha-pu" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <!--<mapping-file>META-INF/orm.xml</mapping-file>-->
+    <!--    <properties>
           <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2008Dialect"/>
           <property name="hibernate.show_sql" value="false"/>
           <property name="hibernate.format_sql" value="false"/>
           <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
           <property name="hibernate.hbm2ddl.auto" value="validate"/>
         </properties-->
-<!--        <properties>
+    <!--        <properties>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2008Dialect"/>
@@ -22,22 +21,23 @@
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
             
         </properties>-->
-        <properties>
-						
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <!-- <property name="hibernate.hbm2ddl.auto" value="create-drop"/> -->
-            <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
-            
-            <!-- Just Testing this -->
-            <property name="hibernate.c3p0.max_size" value="60" />
-            <property name="hibernate.c3p0.min_size" value="20" />
-            <property name="hibernate.c3p0.acquire_increment" value="1" />
-            <property name="hibernate.c3p0.idle_test_period" value="300" />
-            <property name="hibernate.c3p0.timeout" value="100" />
-	        
-            <property name = "hibernate.show_sql" value = "true" />
-            <property name= "hibernate.temp.use_jdbc_metadata_defaults" value="false"/>
-        </properties>
-    </persistence-unit>
+    <jta-data-source>java:jboss/datasources/MALAYITSHA</jta-data-source>
+    <properties>
+       <property name="hibernate.hbm2ddl.auto" value="update"/> 
+      <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+      <!-- Just Testing this -->
+<!--      <property name="hibernate.c3p0.max_size" value="60"/>
+      <property name="hibernate.c3p0.min_size" value="20"/>
+      <property name="hibernate.c3p0.acquire_increment" value="1"/>
+      <property name="hibernate.c3p0.idle_test_period" value="300"/>
+      <property name="hibernate.c3p0.timeout" value="100"/>-->
+      <property name="hibernate.show_sql" value="true"/>
+      
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.archive.autodetection" value="class, hbm"/>
+      <!--<property name="hibernate.temp.use_jdbc_metadata_defaults" value="false"/>-->
+      <!--<property name="javax.persistence.schema-generation.database.action" value="create"/>-->
+    </properties>
+  </persistence-unit>
 </persistence>
