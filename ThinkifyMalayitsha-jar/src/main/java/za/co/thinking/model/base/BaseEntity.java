@@ -14,7 +14,7 @@ import javax.persistence.TemporalType;
  * File Name : BaseEntity.java Project Name : MainThinkify-jar
  *
  * @since Dec 19, 2016, 3:47:30 PM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @MappedSuperclass

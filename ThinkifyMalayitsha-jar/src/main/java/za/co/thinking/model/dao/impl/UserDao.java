@@ -15,7 +15,7 @@ import za.co.thinking.model.security.User;
  * File Name : UserDao.java Project Name : MainThinkify-jar
  *
  * @since Dec 20, 2016, 10:22:58 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Stateless

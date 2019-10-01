@@ -8,7 +8,7 @@ import za.co.thinking.model.security.Person;
  * File Name : PersonDao.java Project Name : MainThinkify-jar
  *
  * @since Dec 20, 2016, 10:25:08 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 public class PersonDao extends AbstractDao<Person>  {

@@ -13,7 +13,7 @@ import za.co.thinking.security.service.util.EntityMapper;
  * File Name : UserService.java Project Name : MainThinkify-ejb
  *
  * @since Dec 20, 2016, 10:30:11 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Stateless

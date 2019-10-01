@@ -22,7 +22,7 @@ import za.co.thinking.model.base.BaseEntity;
  * File Name : User.java Project Name : MainThinkify-jar
  *
  * @since Dec 19, 2016, 4:38:42 PM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Entity

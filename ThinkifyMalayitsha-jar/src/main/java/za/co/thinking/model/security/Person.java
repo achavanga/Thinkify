@@ -21,7 +21,7 @@ import za.co.thinking.model.security.contact.Address;
  * File Name : Person.java Project Name : MainThinkify-jar
  *
  * @since Dec 19, 2016, 4:42:57 PM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Entity

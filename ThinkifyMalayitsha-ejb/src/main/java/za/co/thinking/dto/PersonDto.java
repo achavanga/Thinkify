@@ -9,7 +9,7 @@ import java.util.Set;
  * Project Name : MainThinkify-ejb
  *
  * @since  Dec 20, 2016, 10:33:57 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>  
+ * @author Abel Chavanga <achavanga@gmail.com>  
  *
  */
 public class PersonDto extends BaseDto{

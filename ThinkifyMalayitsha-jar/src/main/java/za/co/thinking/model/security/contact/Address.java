@@ -11,7 +11,7 @@ import za.co.thinking.model.base.BaseEntity;
  * File Name : Address.java Project Name : MainThinkify-jar
  *
  * @since Dec 19, 2016, 4:47:55 PM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Entity

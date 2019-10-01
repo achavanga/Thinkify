@@ -5,7 +5,7 @@ package za.co.thinking.mapper;
  * Project Name : MainThinkify-ejb
  *
  * @since  Dec 20, 2016, 10:32:50 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>  
+ * @author Abel Chavanga <achavanga@gmail.com>  
  *
  */
 public class ServiceMapper {

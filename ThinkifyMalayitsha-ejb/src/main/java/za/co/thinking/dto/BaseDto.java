@@ -7,7 +7,7 @@ import java.util.Date;
  * File Name : BaseDto.java Project Name : MainThinkify-ejb
  *
  * @since Dec 20, 2016, 10:34:08 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 public class BaseDto implements Serializable {

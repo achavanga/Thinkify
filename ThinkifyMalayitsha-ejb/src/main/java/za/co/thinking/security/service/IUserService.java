@@ -9,7 +9,7 @@ import za.co.thinking.dto.UserDto;
  * File Name : IUserService.java Project Name : MainThinkify-ejb
  *
  * @since Dec 20, 2016, 10:29:25 AM
- * @author Abel Chavanga <achavanga@fnb.co.za>
+ * @author Abel Chavanga <achavanga@gmail.com>
  *
  */
 @Local
